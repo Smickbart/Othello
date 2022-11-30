@@ -1,0 +1,41 @@
+html {
+    height: 100vh;
+}
+body {
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.board {
+    border: solid black 10px;
+    box-shadow: 10px 5px 5px darkgrey;
+}
+.row {
+    display: flex;
+}
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: green;
+    border: solid black 1px;
+}
+.piece {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;    
+}
+.white {
+    background: white;
+    box-shadow: 4px 2px 3px darkgreen;
+}
+.black {
+    background: black;
+    box-shadow: 4px 2px 3px darkgreen;
+}
