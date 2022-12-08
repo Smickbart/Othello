@@ -11,7 +11,7 @@ body {
     align-items: center;
 }
 .board {
-    border: solid black 10px;
+    border: solid black calc(85vh / 8 / 10);
     box-shadow: 10px 5px 5px darkgrey;
 }
 .row {
@@ -19,10 +19,8 @@ body {
 }
 .cell {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100px;
+    height: calc(85vh / 8);
+    width: calc(85vh / 8);
     background: green;
     border: solid black 1px;
 }
@@ -38,4 +36,15 @@ body {
 .black {
     background: black;
     box-shadow: 4px 2px 3px darkgreen;
+}
+
+@media only screen and (orientation: portrait) {
+    .cell {
+        height: calc(85vw / 8);
+        width: calc(85vw / 8);
+    }
+    .board {
+        border: solid black calc(85vw / 8 / 10);
+        box-shadow: 10px 5px 5px darkgrey;
+    }
 }
